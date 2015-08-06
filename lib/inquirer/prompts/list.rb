@@ -33,7 +33,7 @@ class ListDefault
   include ListRenderer
   C = Term::ANSIColor
   def initialize( style )
-    @heading = "%s:\n"
+    @heading = "%s\n"
     @footer = "%s\n"
     @item = "%s\n"
     @selected_item = C.cyan("%s") + "\n"
@@ -46,7 +46,7 @@ class ListResponseDefault
   include ListRenderer
   C = Term::ANSIColor
   def initialize( style = nil )
-    @heading = "%s: "
+    @heading = "%s "
     @response = C.cyan("%s") + "\n"
   end
 end
